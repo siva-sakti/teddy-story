@@ -50,6 +50,13 @@ A handdrawn storybook web app where teddy bears and creatures on shelves tell vi
 - [ ] Hover state PNG (perked up, eyes bright/wide)
 - Note: One unique teddy per story, designed to match the story's theme
 
+**Canvas dimensions:**
+- Teddies: **500 x 500 px** (displays at 120px, this gives 4x for crisp retina)
+- Shelf background: **2400 x 1600 px** (covers most screens, will scale down)
+- Speech bubbles: **800 x 600 px** (or larger if needed)
+- Export as PNG with transparency
+- Keep originals in Procreate at higher res if you want to adjust later
+
 ### UI Elements
 - [ ] Small speech bubble (for preview on hover)
 - [ ] Large speech bubble (story container) — can tile/stretch?

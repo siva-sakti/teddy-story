@@ -41,6 +41,37 @@ body {
   padding-bottom: 40px;
 }
 
+/* ===== Site Header ===== */
+.site-header {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+.site-title {
+  font-size: 3rem;
+  color: var(--color-accent);
+  text-shadow: 2px 2px 0 var(--color-wood-shadow);
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.site-subtitle {
+  font-size: 1.3rem;
+  color: var(--color-text);
+  opacity: 0.8;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 2rem;
+  }
+
+  .site-subtitle {
+    font-size: 1rem;
+  }
+}
+
 /* ===== Filter Bar ===== */
 .filter-bar {
   display: flex;
@@ -71,6 +102,16 @@ body {
   background: var(--color-accent);
   color: white;
   border-style: solid;
+}
+
+/* ===== Shelf Prompt ===== */
+.shelf-prompt {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--color-text);
+  opacity: 0.7;
+  margin-bottom: 15px;
+  font-style: italic;
 }
 
 /* ===== Shelf Container ===== */
@@ -134,20 +175,33 @@ body {
   animation: none;
 }
 
+/* Stack both images, crossfade on hover */
+.teddy-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.teddy-item {
+  width: 120px;
+  height: 120px;
+}
+
 .teddy-image.idle {
-  display: block;
+  opacity: 1;
 }
 
 .teddy-image.hover {
-  display: none;
+  opacity: 0;
 }
 
 .teddy-item:hover .teddy-image.idle {
-  display: none;
+  opacity: 0;
 }
 
 .teddy-item:hover .teddy-image.hover {
-  display: block;
+  opacity: 1;
 }
 
 /* ===== Breathing Animation ===== */
@@ -373,21 +427,52 @@ body {
   }
 }
 
-/* ===== Page Transition ===== */
-@keyframes fadeIn {
+/* ===== Page Transitions ===== */
+
+/* Entry animation */
+@keyframes fadeSlideIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px) scale(0.98);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Exit animation (applied via JS before navigation) */
+@keyframes fadeSlideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.98);
   }
 }
 
 .library,
 .story-container {
-  animation: fadeIn 0.4s ease-out;
+  animation: fadeSlideIn 0.5s ease-out;
+}
+
+.page-exit {
+  animation: fadeSlideOut 0.3s ease-in forwards;
+}
+
+/* View Transitions API (modern browsers) */
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root) {
+  animation: fadeSlideOut 0.3s ease-in;
+}
+
+::view-transition-new(root) {
+  animation: fadeSlideIn 0.4s ease-out;
 }
 
 /* ===== Placeholder Teddy (until real assets) ===== */

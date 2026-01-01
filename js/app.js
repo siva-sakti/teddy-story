@@ -202,7 +202,28 @@ function initPreviewBubble() {
 // ===== Navigate to Story =====
 function handleTeddyClick(e) {
   const storyId = e.currentTarget.dataset.storyId;
-  window.location.href = `story.html?id=${storyId}`;
+  navigateWithTransition(`story.html?id=${storyId}`);
+}
+
+// ===== Smooth Page Transition =====
+function navigateWithTransition(url) {
+  // Use View Transitions API if available
+  if (document.startViewTransition) {
+    document.startViewTransition(() => {
+      window.location.href = url;
+    });
+  } else {
+    // Fallback: animate out, then navigate
+    const container = document.querySelector('.library') || document.querySelector('.story-container');
+    if (container) {
+      container.classList.add('page-exit');
+      setTimeout(() => {
+        window.location.href = url;
+      }, 300);
+    } else {
+      window.location.href = url;
+    }
+  }
 }
 
 // ===== Story Page =====
@@ -220,6 +241,15 @@ function initStoryPage() {
   if (!story) {
     window.location.href = 'index.html';
     return;
+  }
+
+  // Add smooth transition to back button
+  const backBtn = document.getElementById('back-button');
+  if (backBtn) {
+    backBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      navigateWithTransition('index.html');
+    });
   }
 
   // Populate story content
