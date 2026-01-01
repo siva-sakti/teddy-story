@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Theodore the Bear - Idle State -->
+
+  <!-- Ears -->
+  <circle cx="25" cy="25" r="18" fill="#c9a66b"/>
+  <circle cx="25" cy="25" r="10" fill="#e8d4b8"/>
+  <circle cx="95" cy="25" r="18" fill="#c9a66b"/>
+  <circle cx="95" cy="25" r="10" fill="#e8d4b8"/>
+
+  <!-- Head -->
+  <ellipse cx="60" cy="55" rx="45" ry="40" fill="#c9a66b"/>
+
+  <!-- Muzzle -->
+  <ellipse cx="60" cy="65" rx="20" ry="15" fill="#e8d4b8"/>
+
+  <!-- Eyes - relaxed -->
+  <ellipse cx="42" cy="48" rx="6" ry="5" fill="#3d2914"/>
+  <ellipse cx="78" cy="48" rx="6" ry="5" fill="#3d2914"/>
+
+  <!-- Eye shine -->
+  <circle cx="44" cy="46" r="2" fill="white"/>
+  <circle cx="80" cy="46" r="2" fill="white"/>
+
+  <!-- Nose -->
+  <ellipse cx="60" cy="60" rx="6" ry="4" fill="#3d2914"/>
+
+  <!-- Mouth - gentle smile -->
+  <path d="M 52 70 Q 60 76 68 70" stroke="#3d2914" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Body -->
+  <ellipse cx="60" cy="105" rx="35" ry="25" fill="#c9a66b"/>
+
+  <!-- Belly -->
+  <ellipse cx="60" cy="105" rx="20" ry="15" fill="#e8d4b8"/>
+
+  <!-- Arms -->
+  <ellipse cx="25" cy="95" rx="12" ry="18" fill="#c9a66b" transform="rotate(-20 25 95)"/>
+  <ellipse cx="95" cy="95" rx="12" ry="18" fill="#c9a66b" transform="rotate(20 95 95)"/>
+</svg>

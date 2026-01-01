@@ -1,0 +1,17 @@
+{
+  "virtues": ["courage", "kindness", "patience", "honesty", "perseverance"],
+  "stories": [
+    {
+      "id": "the-brave-little-bear",
+      "title": "The Brave Little Bear",
+      "preview": "A story about finding courage in unexpected places...",
+      "content": "Once upon a time, in a cozy corner of a child's room, there lived a small brown bear named Theodore. He wasn't the biggest toy on the shelf, nor the shiniest. But Theodore had something special inside him—a heart full of quiet courage.\n\nOne stormy night, when thunder shook the windows and lightning painted the walls, all the other toys trembled. The tin soldier rattled. The porcelain doll hid her face. Even the proud wooden horse lowered his head.\n\nBut Theodore climbed down from the shelf. Step by step, he made his way across the dark room to the little girl's bed. He nestled close to her pillow and whispered, \"Don't be afraid. I'm here.\"\n\nThe girl held him tight, and somehow, the storm didn't seem so scary anymore.\n\nFrom that night on, Theodore learned something important: courage isn't about being unafraid. It's about showing up for others, even when you're scared yourself.",
+      "virtue": "courage",
+      "teddy": {
+        "name": "Theodore",
+        "idleImage": "/assets/teddies/theodore-idle.svg",
+        "hoverImage": "/assets/teddies/theodore-hover.svg"
+      }
+    }
+  ]
+}

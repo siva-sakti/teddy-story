@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teddy Virtue Mythos</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="library">
+    <!-- Virtue Filter -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-virtue="all">All</button>
+      <button class="filter-btn" data-virtue="courage">Courage</button>
+      <button class="filter-btn" data-virtue="kindness">Kindness</button>
+      <button class="filter-btn" data-virtue="patience">Patience</button>
+      <button class="filter-btn" data-virtue="honesty">Honesty</button>
+      <button class="filter-btn" data-virtue="perseverance">Perseverance</button>
+    </div>
+
+    <!-- Shelf with Teddies -->
+    <div class="shelf-container">
+      <div class="shelf">
+        <div class="teddy-grid" id="teddy-grid">
+          <!-- Teddies will be populated by JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Speech Bubble Preview (appears on hover) -->
+  <div class="preview-bubble" id="preview-bubble">
+    <div class="bubble-content">
+      <h3 class="bubble-title"></h3>
+      <p class="bubble-preview"></p>
+    </div>
+    <div class="bubble-tail"></div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

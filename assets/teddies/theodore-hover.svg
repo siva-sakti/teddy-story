@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Theodore the Bear - Hover/Excited State -->
+
+  <!-- Ears - perked up slightly -->
+  <circle cx="22" cy="20" r="18" fill="#c9a66b"/>
+  <circle cx="22" cy="20" r="10" fill="#e8d4b8"/>
+  <circle cx="98" cy="20" r="18" fill="#c9a66b"/>
+  <circle cx="98" cy="20" r="10" fill="#e8d4b8"/>
+
+  <!-- Head - slightly raised -->
+  <ellipse cx="60" cy="52" rx="45" ry="40" fill="#c9a66b"/>
+
+  <!-- Muzzle -->
+  <ellipse cx="60" cy="62" rx="20" ry="15" fill="#e8d4b8"/>
+
+  <!-- Eyes - wide and excited! -->
+  <ellipse cx="42" cy="45" rx="8" ry="9" fill="#3d2914"/>
+  <ellipse cx="78" cy="45" rx="8" ry="9" fill="#3d2914"/>
+
+  <!-- Eye shine - bigger -->
+  <circle cx="45" cy="42" r="3" fill="white"/>
+  <circle cx="81" cy="42" r="3" fill="white"/>
+
+  <!-- Eyebrows raised -->
+  <path d="M 32 32 Q 42 28 50 33" stroke="#3d2914" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 88 32 Q 78 28 70 33" stroke="#3d2914" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <ellipse cx="60" cy="57" rx="6" ry="4" fill="#3d2914"/>
+
+  <!-- Mouth - big happy smile -->
+  <path d="M 48 67 Q 60 78 72 67" stroke="#3d2914" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Blush marks -->
+  <ellipse cx="32" cy="55" rx="6" ry="3" fill="#e8a4a4" opacity="0.6"/>
+  <ellipse cx="88" cy="55" rx="6" ry="3" fill="#e8a4a4" opacity="0.6"/>
+
+  <!-- Body -->
+  <ellipse cx="60" cy="105" rx="35" ry="25" fill="#c9a66b"/>
+
+  <!-- Belly -->
+  <ellipse cx="60" cy="105" rx="20" ry="15" fill="#e8d4b8"/>
+
+  <!-- Arms - raised slightly -->
+  <ellipse cx="22" cy="88" rx="12" ry="18" fill="#c9a66b" transform="rotate(-35 22 88)"/>
+  <ellipse cx="98" cy="88" rx="12" ry="18" fill="#c9a66b" transform="rotate(35 98 88)"/>
+</svg>
